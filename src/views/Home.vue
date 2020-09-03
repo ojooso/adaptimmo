@@ -66,9 +66,11 @@ export default {
     },
     watch: {
         type() {
+            this.page = 1;
             this.getAssets();
         },
         state() {
+            this.page = 1;
             this.getAssets();
         },
         page() {
